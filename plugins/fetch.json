@@ -1,0 +1,104 @@
+{
+    "com.bxl.service.phonegap": {
+        "source": {
+            "type": "local",
+            "path": "..\\bixolonPlugin"
+        }
+    },
+    "org.apache.cordova.battery-status": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.battery-status"
+        }
+    },
+    "com.simonmacdonald.telephonenumber": {
+        "source": {
+            "type": "registry",
+            "id": "com.simonmacdonald.telephonenumber"
+        }
+    },
+    "org.apache.cordova.console": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.console"
+        }
+    },
+    "org.apache.cordova.contacts": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.contacts"
+        }
+    },
+    "org.apache.cordova.device": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.device"
+        }
+    },
+    "org.apache.cordova.device-motion": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.device-motion"
+        }
+    },
+    "org.apache.cordova.device-orientation": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.device-orientation"
+        }
+    },
+    "org.apache.cordova.dialogs": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.dialogs"
+        }
+    },
+    "org.apache.cordova.file": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.file"
+        }
+    },
+    "org.apache.cordova.file-transfer": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.file-transfer"
+        }
+    },
+    "org.apache.cordova.geolocation": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.geolocation"
+        }
+    },
+    "org.apache.cordova.globalization": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.globalization"
+        }
+    },
+    "org.apache.cordova.inappbrowser": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.inappbrowser"
+        }
+    },
+    "org.apache.cordova.network-information": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.network-information"
+        }
+    },
+    "org.apache.cordova.splashscreen": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.splashscreen"
+        }
+    },
+    "org.apache.cordova.vibration": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.vibration"
+        }
+    }
+}
