@@ -343,6 +343,13 @@ module.exports = [
             "navigator.notification",
             "navigator"
         ]
+    },
+    {
+        "file": "plugins/com.phonegap.plugins.bluetooth/www/bluetooth.js",
+        "id": "com.phonegap.plugins.bluetooth.bluetooth",
+        "clobbers": [
+            "bluetooth"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -364,7 +371,8 @@ module.exports.metadata =
     "org.apache.cordova.inappbrowser": "0.6.0",
     "org.apache.cordova.network-information": "0.2.15",
     "org.apache.cordova.splashscreen": "1.0.0",
-    "org.apache.cordova.vibration": "0.3.13"
+    "org.apache.cordova.vibration": "0.3.13",
+    "com.phonegap.plugins.bluetooth": "0.9"
 }
 // BOTTOM OF METADATA
 });

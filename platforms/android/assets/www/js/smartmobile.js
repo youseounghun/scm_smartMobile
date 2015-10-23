@@ -12,7 +12,6 @@
  * @author ysh
  */
 $(document).ready(function(){
-	alert("1");
 	// device resest call
 	fn_deviceResetCall();
 });
@@ -24,7 +23,7 @@ $(document).ready(function(){
  */
 function fn_deviceResetCall()
 {
-	document.addEventListener("deviceready", fn_onDeviceReady, false);
+	document.addEventListener("deviceready", onDeviceReady, false);
 }
 
 /**
@@ -32,10 +31,10 @@ function fn_deviceResetCall()
  * @date  2015.10.23
  * @author ysh
  */
-function fn_onDeviceReady()
+function onDeviceReady()
 {
 	// back key 설정
-	document.addEventListener("backbutton", fn_onBackKeyDown, false);
+	document.addEventListener("backbutton", onBackKeyDown, false);
 }
 
 /**
@@ -43,7 +42,20 @@ function fn_onDeviceReady()
  * @date  2015.10.23
  * @author ysh
  */
-function fn_onBackKeyDown()
+function onBackKeyDown()
 {
+	// close message confirm
 	navigator.notification.confirm("종료 하시겠습니까?", onBackKeyDownMsg, "어플종료","취소,종료");
+}
+
+/**
+ * 어플 종료
+ * @date  2015.10.23
+ * @author ysh
+ * @param buytton
+ */
+function onBackKeyDownMsg(button)
+{
+	// apple close
+	if(button == 2) navigator.app.exitApp();
 }

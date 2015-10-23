@@ -67,6 +67,10 @@
                         {
                             "xml": "<feature name=\"Vibration\"><param name=\"android-package\" value=\"org.apache.cordova.vibration.Vibration\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Bluetooth\"><param name=\"android-package\" value=\"org.apache.cordova.bluetooth.BluetoothPlugin\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -80,6 +84,14 @@
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\" />",
                             "count": 1
                         }
                     ],
@@ -167,6 +179,9 @@
             "PACKAGE_NAME": "com.drimhitech.rhscm_smartMobile"
         },
         "org.apache.cordova.vibration": {
+            "PACKAGE_NAME": "com.drimhitech.rhscm_smartMobile"
+        },
+        "com.phonegap.plugins.bluetooth": {
             "PACKAGE_NAME": "com.drimhitech.rhscm_smartMobile"
         }
     },

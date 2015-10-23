@@ -100,5 +100,12 @@
             "type": "registry",
             "id": "org.apache.cordova.vibration"
         }
+    },
+    "com.phonegap.plugins.bluetooth": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/tanelih/phonegap-bluetooth-plugin.git",
+            "subdir": "."
+        }
     }
 }

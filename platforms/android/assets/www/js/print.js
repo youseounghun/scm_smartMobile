@@ -10,11 +10,11 @@ var app = {
 	
 	onDeviceReady : function() {
 		var buttonOpen = document.getElementById('buttonOpen');
-		var buttonClaim = document.getElementById('buttonClaim');
-		var buttonDeviceEnabledTrue = document.getElementById('buttonDeviceEnabledTrue');
-		var buttonCheckHealth = document.getElementById('buttonCheckHealth');
+		//var buttonClaim = document.getElementById('buttonClaim');
+		//var buttonDeviceEnabledTrue = document.getElementById('buttonDeviceEnabledTrue');
+		//var buttonCheckHealth = document.getElementById('buttonCheckHealth');
 		var buttonPrintNormal = document.getElementById('buttonPrintNormal');
-		var buttonPrintBitmap = document.getElementById('buttonPrintBitmap');
+		//var buttonPrintBitmap = document.getElementById('buttonPrintBitmap');
 		var buttonPrintBarCode = document.getElementById('buttonPrintBarCode');
 		var buttonDeviceEnabledFalse = document.getElementById('buttonDeviceEnabledFalse');
 		var buttonRelease = document.getElementById('buttonRelease');
@@ -23,6 +23,7 @@ var app = {
 		buttonOpen.addEventListener('click', function() {
 			app.open();
 		});
+		/*
 		buttonClaim.addEventListener('click', function() {
 			app.claim();
 		});
@@ -32,35 +33,44 @@ var app = {
 		buttonCheckHealth.addEventListener('click', function() {
 			app.checkHealth();
 		});
+		*/
 		buttonPrintNormal.addEventListener('click', function() {
 			app.printNormal();
 		});
+		/*
 		buttonPrintBitmap.addEventListener('click', function() {
 			app.printBitmap();
 		});
+		*/
+		/*
 		buttonPrintBarCode.addEventListener('click', function() {
 			app.printBarCode();
 		});
+		*/
+		/*
 		buttonDeviceEnabledFalse.addEventListener('click', function() {
 			app.setDeviceEnabledFalse();
 		});
 		buttonRelease.addEventListener('click', function() {
 			app.release();
 		});
+		*/
 		buttonClose.addEventListener('click', function() {
-			app.close();
+			app.setDeviceEnabledFalse();
 		});
 	},
 	open : function() {
 		bxl_service.open(function() {
-			alert("open success");
+			alert("open success --> claim");
+			app.claim();
 		}, function(error) {
 			alert("open: " + error);
 		}, "SPP-R200II");
 	},
 	claim : function() {
 		bxl_service.claim(function() {
-			alert("claim success");
+			alert("claim success --> setDeviceEnableTrue");
+			app.setDeviceEnabledTrue();
 		}, function(error) {
 			alert("claim: " + error);
 		}, 0);
@@ -102,14 +112,16 @@ var app = {
 	},
 	setDeviceEnabledFalse : function() {
 		bxl_service.setDeviceEnabled(function() {
-			alert("setDeviceEnabled success");
+			alert("setDeviceEnabled success --> release");
+			app.release();
 		}, function(error) {
 			alert("disable: " + error);
 		}, false);
 	},
 	release : function() {
 		bxl_service.release(function() {
-			alert("release success");
+			alert("release success --> close");
+			app.close();
 		}, function(error) {
 			alert("release: " + error);
 		});

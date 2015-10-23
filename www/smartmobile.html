@@ -18,40 +18,70 @@
 <script type="text/javascript" src="./js/print.js"></script>
 <script type="text/javascript" src="./js/smartmobile.js"></script>
 <script type="text/javascript" src="plugins/com.bxl.service.phonegap/www/bxl_service.js"></script>
+
+<!-- bluetooth js include -->
+<script type="text/javascript" src="./js/bluetooth/bootstrap.js"></script>
+<script type="text/javascript" src="./js/bluetooth/underscore.js"></script>
+<script type="text/javascript" src="./js/bluetooth/backbone.js"></script>
+<script type="text/javascript" src="./js/bluetooth/templates.js"></script>
+<script type="text/javascript" src="./js/bluetooth/bluetooth.js"></script>
+
 <script type="text/javascript">
-	//app.initialize();
+	// 프린터 장비 설정 함수 
+	app.initialize();
 </script>
 
 </head>
 
 <body>
 
-<h1>test page</h1>
-<!--  
+<h1>bluetooth test</h1>
+<div>
+	<div>
+        <button id="btn-bt-on" type="button" >
+            On
+        </button>
+    </div>
+    <br>
+    <div>
+        <button id="btn-bt-off" type="button">
+            Off
+        </button>
+    </div>
+</div>
 
-<button id='buttonOpen'>open(SPP-R200II)</button>
+<br><br>
+
+<h1>print test</h1>
+
+<button id='buttonOpen'>open</button>
 <br>
+<!--  
 <button id='buttonClaim'>claim</button>
 <br>
 <button id='buttonDeviceEnabledTrue'>setDeviceEnabled(true)</button>
 <br>
 <button id='buttonCheckHealth'>checkHealth</button>
+-->
 <br>
 <button id='buttonPrintNormal'>printNormal</button>
 <br>
+<!--  
 <button id='buttonPrintBitmap'>printBitmap</button>
 <br>
 <button id='buttonPrintBarCode'>printBarcode</button>
 <br>
+-->
+<!--  
 <button id='buttonDeviceEnabledFalse'>
 	setDeviceEnabled(false)</button>
 <br>
 <button id='buttonRelease'>release</button>
 <br>
-
+-->
+<br>
 <button id='buttonClose'>close</button>
 <br>
--->
 
 </body>
 
