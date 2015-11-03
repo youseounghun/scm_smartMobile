@@ -1,0 +1,83 @@
+<!--  
+/************************************************************
+Author      : 유승훈
+Create Date : 2015.10.26
+Subject     : RH-SCM SMART index 페이지
+Comment     : 
+------------------------------------------------------------
+Modify Date :
+Comment     :
+************************************************************/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="euc-kr" />
+<meta name="viewport" content="inital-scale=1.0; maximum-scale=1.0; user-scalable=yes; width=device-width;height=device-height" />
+
+<!-- css include -->
+
+<!-- js include -->
+<script type="text/javascript" src="../cordova.js"></script>
+<script type="text/javascript" src="http://supp.drimhitech.com/mobile/lib/js/jquery/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="http://supp.drimhitech.com/mobile/lib/js/jquery/jquery-ui-1.11.4.min.js"></script>
+<script type="text/javascript" src="http://supp.drimhitech.com/mobile/lib/js/main/smartmobile.js"></script>
+<script type="text/javascript" src="http://supp.drimhitech.com/mobile/lib/js/config/print.js"></script>
+<script type="text/javascript" src="http://supp.drimhitech.com/mobile/lib/js/common/common.js"></script>
+<script type="text/javascript" src="plugins/com.bxl.service.phonegap/www/bxl_service.js"></script>
+
+</head>
+
+<body id='body_scm' style='overflow:hidden;margin:0px;padding:0px;'>
+
+<!-- RH-SCM SMART MOBILE START -->
+
+<!-- RH-SCM MAIN START -->
+<div id='div_scm_main' style='height:100%;'>
+
+	<!-- RH-SCM TOP WRAPPER START -->
+	<div id='div_scm_main_top' style='background-color:red;'>
+	</div>
+	<!-- RH-SCM TOP WRAPPER END -->
+	
+	<!-- RH-SCM CONTENTS WRAPPER START -->
+	<div id='div_scm_main_contents' style='background-color:white;'>
+		
+		<!-- CONTENTS 1 START -->
+		<div id='div_contents_wrapper_1' style='display:block;'>
+			<div id='div_contents_iframe1'>
+				<iframe id ='iframe_contents_1' style='width:100%;height:100%;border:none;'>
+				</iframe>
+			</div>
+		</div>
+		<!-- CONTENTS 1 END -->
+		
+		<!-- CONTENTS 2 START -->
+		<div id='div_contents_wrapper_2'  style='display:none;'>
+			<div id='div_contents_iframe2'>
+				<iframe id ='iframe_contents_2' style='width:100%;height:100%;border:none;'>
+				</iframe>
+			</div>
+		</div>
+		<!-- CONTENTS 2 END -->
+		
+	</div>
+	<!-- RH-SCM CONTENTS WRAPPER END -->
+	
+	<!-- RH-SCM FOOTER WRAPPER START -->
+	<div id='div_scm_main_footer' style='background-color:yellow;'>
+		<input type="button" value='HOME' onclick='fn_pageChange(0)'>
+		<input type="button" value='매입' onclick='fn_pageChange(1)'> 
+		<input type="button" value='설정' onclick='fn_pageChange(2)'>
+	</div>
+	<!-- RH-SCM FOOTER WRAPPER END -->
+	
+</div>
+<!-- RH-SCM MAIN END -->
+
+<!--  RH-SCM SMART MOBILE END -->
+
+</body>
+
+
+</html> 

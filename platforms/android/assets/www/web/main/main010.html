@@ -1,0 +1,128 @@
+<!--  
+/************************************************************
+Author      : 유승훈
+Create Date : 2015.10.26
+Subject     : RH-SCM SMART index 페이지
+Comment     : 
+------------------------------------------------------------
+Modify Date :
+Comment     :
+************************************************************/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="euc-kr" />  
+<meta name="viewport" content="inital-scale=1.0; maximum-scale=1.0; user-scalable=yes; width=device-width;height=device-height" />
+
+<!-- js include -->
+<script type="text/javascript" src="../../cordova.js"></script>
+<script type="text/javascript" src="http://supp.drimhitech.com/mobile/lib/js/jquery/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="http://supp.drimhitech.com/mobile/lib/js/jquery/jquery-ui-1.11.4.min.js"></script>
+<script type="text/javascript" src="http://supp.drimhitech.com/mobile/lib/js/main/main010.js"></script>
+<script type="text/javascript" src="http://supp.drimhitech.com/mobile/lib/js/common/common.js"></script>
+<script type="text/javascript" src="plugins/com.bxl.service.phonegap/www/bxl_service.js"></script>
+
+<!-- css incude -->
+<link rel=stylesheet type=text/css href="http://supp.drimhitech.com/mobile/lib/css/main/main010.css" />
+
+</head>
+
+<body id='body_scm'>
+
+<!-- RH-SCM SMART MOBILE START -->
+
+<!-- RH-SCM MAIN START -->
+<div id='div_scm_main'>
+
+	<!-- RH-SCM CONTENTS WRAPPER START -->
+	<div id='div_scm_main_contents'>
+		
+		<!-- CONTENTS 1 START -->
+		<div id='div_contents_wrapper_1' style='display:block;'>
+			<div id='div_contents_iframe1'>
+				<iframe id ='iframe_contents_1' style='width:100%;height:100%;border:none;'>
+				</iframe>
+			</div>
+		</div>
+		<!-- CONTENTS 1 END -->
+		
+		<!-- CONTENTS 2 START -->
+		<div id='div_contents_wrapper_2'  style='display:none;'>
+			<div id='div_contents_iframe2'>
+				<iframe id ='iframe_contents_2' style='width:100%;height:100%;border:none;'>
+				</iframe>
+			</div>
+		</div>
+		<!-- CONTENTS 2 END -->
+		
+	</div>
+	<!-- RH-SCM CONTENTS WRAPPER END -->
+	
+	<!-- RH-SCM FOOTER WRAPPER START -->
+	<div id='div_scm_main_footer'>
+		<table id='table_main_footer_wrapper' class='table_main_footer_wrapper_class'>
+			<tr>
+				<td class='td_main_footer_image_class'>
+					<table id='table_footer_home' class='table_footer_home_class'></table>
+				</td>
+				<td></td>
+				<td class='td_main_footer_image_class'>
+					<table id='table_footer_reset' class='table_footer_reset_class'></table>
+				</td>
+				<td class='td_main_footer_image_class'>
+					<table id='table_footer_logout' class='table_footer_logout_class'></table>
+				</td>
+				<td class='td_main_footer_image_class'>
+					<table id='table_footer_config' class='table_footer_config_class'></table>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<!-- RH-SCM FOOTER WRAPPER END -->
+	
+</div>
+<!-- RH-SCM MAIN END -->
+
+<!--  RH-SCM SMART MOBILE END -->
+
+<!-- RH-SCM MESSAGE START -->
+<div id='div_message_wrapper' class='div_message_wrapper_class'>
+	<div id='div_message_contents'>
+		<table id='table_message_contents' class='table_message_contents_class'>
+			<tr class='tr_message_row1_class'>
+				<td colspan='4'></td>
+				<td class='td_message_row1_cell1_class'>
+					<table id='table_message_close' class='table_message_close_class'></table>
+				</td>
+			</tr>
+			<tr class='tr_message_row2_class'></tr>
+			<tr class='tr_message_row3_class'>
+				<td></td>
+				<td colspan='3'>
+					<span id='span_message_text' class='span_message_text_class'></span>
+				</td>
+				<td></td>
+			</tr>
+			<tr class='tr_message_row4_class'></tr>
+			<tr class='tr_message_row5_class'>
+				<td class='td_message_row5_cell1_class'></td>
+				<td class='td_message_row5_cell2_class'>
+					<table id='table_message_yes' class='table_message_yes_class'></table>
+				</td>
+				<td class='td_message_row5_cell3_class'></td>
+				<td class='td_message_row5_cell2_class'><table id='table_message_no' class='table_message_no_class'></table></td>
+				<td class='td_message_row5_cell1_class'></td>
+			</tr>
+			<tr class='tr_message_row6_class'></tr>
+		</table>
+	</div>
+</div>
+
+<div id='div_message_empty_wrapper' class='div_message_empty_wrapper_class'></div>
+<!-- RH-SCM MESSAGE END -->
+
+</body>
+
+
+</html> 

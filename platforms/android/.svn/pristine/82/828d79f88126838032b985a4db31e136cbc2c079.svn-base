@@ -7,7 +7,7 @@
 <script type="text/javascript">
 window.onload = function()
 {
-	location.replace("web/login/login010.html");
+	location.replace("web/smartmobile.html");
 }
 </script>
 </head>
