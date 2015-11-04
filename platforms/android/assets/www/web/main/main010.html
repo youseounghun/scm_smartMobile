@@ -21,6 +21,7 @@ Comment     :
 <script type="text/javascript" src="http://supp.drimhitech.com/mobile/lib/js/jquery/jquery-ui-1.11.4.min.js"></script>
 <script type="text/javascript" src="http://supp.drimhitech.com/mobile/lib/js/main/main010.js"></script>
 <script type="text/javascript" src="http://supp.drimhitech.com/mobile/lib/js/common/common.js"></script>
+<script type="text/javascript" src="http://supp.drimhitech.com/mobile/lib/js/common/print.js"></script>
 <script type="text/javascript" src="plugins/com.bxl.service.phonegap/www/bxl_service.js"></script>
 
 <!-- css incude -->
@@ -106,16 +107,27 @@ Comment     :
 			</tr>
 			<tr class='tr_message_row4_class'></tr>
 			<tr class='tr_message_row5_class'>
-				<td class='td_message_row5_cell1_class'></td>
-				<td class='td_message_row5_cell2_class'>
+				<td class='td_message_row5_cell1_class'></td> 
+				<td id='td_message_yes' class='td_message_row5_cell2_class'>
 					<table id='table_message_yes' class='table_message_yes_class'></table>
 				</td>
-				<td class='td_message_row5_cell3_class'></td>
-				<td class='td_message_row5_cell2_class'>
+				<td id='td_message_empty' class='td_message_row5_cell3_class'></td>
+				<td id='td_message_no' class='td_message_row5_cell2_class'>
 					<table id='table_message_no' class='table_message_no_class'></table>
 				</td>
+				<td id='td_message_one_button' class='td_message_one_button_class' colspan='3' style='display:none;'>
+					<table>
+					<tr>
+						<td></td>
+						<td id='td_message_one_button' class='td_message_row5_cell2_class'>
+							<table id='td_message_one_button' class='table_message_yes_class'></table>
+						</td>
+						<td></td>
+					</tr>
+					</table>
+				</td>
 				<td class='td_message_row5_cell1_class'></td>
-			</tr>
+			</tr>	
 			<tr class='tr_message_row6_class'></tr>
 		</table>
 	</div>
