@@ -57,7 +57,7 @@ Ces valeurs d'accélération sont retournées à la fonction callback `accelerom
     navigator.accelerometer.getCurrentAcceleration(accelerometerSuccess, accelerometerError);
     
 
-### Exemple
+### Example
 
     function onSuccess(acceleration) {
         alert('Acceleration X: ' + acceleration.x + '\n' +
@@ -99,7 +99,7 @@ Le retourné regarder ID références intervalle de surveillance de l'accéléro
 *   **accelerometerOptions**: Un objet avec les clés facultatives suivantes : 
     *   **période**: période demandée d'appels à accelerometerSuccess avec les données d'accélération en millisecondes. *(Nombre)* (Par défaut : 10000)
 
-### Exemple
+### Example
 
     function onSuccess(acceleration) {
         alert('Acceleration X: ' + acceleration.x + '\n' +
@@ -119,7 +119,7 @@ Le retourné regarder ID références intervalle de surveillance de l'accéléro
 
 ### iOS Quirks
 
-L'API appelle la fonction de rappel de succès à l'intervalle demandé, mais restreint l'éventail des demandes à l'appareil entre 40ms et 1000ms. Par exemple, si vous demandez un intervalle de 3 secondes, (3000ms), l'API demande des données de l'appareil toutes les 1 seconde, mais seulement exécute le rappel réussi toutes les 3 secondes.
+L'API appelle la fonction de rappel de succès à l'intervalle demandé, mais restreint l'éventail des demandes à l'appareil entre 40ms et 1000ms. Par example, si vous demandez un intervalle de 3 secondes, (3000ms), l'API demande des données de l'appareil toutes les 1 seconde, mais seulement exécute le rappel réussi toutes les 3 secondes.
 
 ## navigator.accelerometer.clearWatch
 
@@ -130,7 +130,7 @@ Arrêter de regarder le `Acceleration` référencé par le `watchID` paramètre.
 
 *   **watchID**: l'ID retourné par`navigator.accelerometer.watchAcceleration`.
 
-### Exemple
+### Example
 
     var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
     

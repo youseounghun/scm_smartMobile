@@ -46,7 +46,7 @@ public class SplashScreen extends CordovaPlugin {
     private static ProgressDialog spinnerDialog;
     private static boolean firstShow = true;
 
-    // Helper to be compile-time compatable with both Cordova 3.x and 4.x.
+    // Helper to be compile-time compatible with both Cordova 3.x and 4.x.
     private View getView() {
         try {
             return (View)webView.getClass().getMethod("getView").invoke(webView);

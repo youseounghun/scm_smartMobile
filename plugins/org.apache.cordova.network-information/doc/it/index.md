@@ -90,7 +90,7 @@ Fino a Cordova 2.3.0, il `Connection` oggetto era accessibile tramite `navigator
 
 ### iOS stranezze
 
-*   iOS non è possibile rilevare il tipo di connessione di rete cellulare. 
+*   iOS non è possible rilevare il tipo di connessione di rete cellulare. 
     *   `navigator.connection.type`è impostata su `Connection.CELL` per tutti i dati cellulare.
 
 ### Stranezze di Windows Phone
@@ -122,7 +122,7 @@ L'evento viene generato quando un'applicazione passa alla modalità offline, e i
 
 ### Dettagli
 
-Il `offline` evento viene generato quando un dispositivo precedentemente connesso perde una connessione di rete in modo che un'applicazione non è più possibile accedere a Internet. Esso si basa sulle stesse informazioni come l'API di connessione e viene generato quando il valore di `connection.type` diventa`NONE`.
+Il `offline` evento viene generato quando un dispositivo precedentemente connesso perde una connessione di rete in modo che un'applicazione non è più possible accedere a Internet. Esso si basa sulle stesse informazioni come l'API di connessione e viene generato quando il valore di `connection.type` diventa`NONE`.
 
 Applicazioni in genere è necessario utilizzare `document.addEventListener` per fissare un listener di eventi una volta il `deviceready` evento incendi.
 

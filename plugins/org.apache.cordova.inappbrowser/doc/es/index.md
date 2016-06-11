@@ -276,7 +276,7 @@ El objeto devuelto desde una llamada a `window.open`.
 
 *   **ref**: referencia a la ventana de `InAppBrowser`. *(InAppBrowser)*
 
-*   **injectDetails**: detalles de la secuencia de comandos para ejecutar, o especificar un `file` o `code` clave. *(Objeto)*
+*   **injectDetails**: detalles de la secuencia de commandos para ejecutar, o especificar un `file` o `code` clave. *(Objeto)*
     
     *   **file**: URL del script para inyectar.
     *   **code**: texto de la escritura para inyectar.
@@ -309,7 +309,7 @@ El objeto devuelto desde una llamada a `window.open`.
 
 *   **ref**: referencia a la ventana de `InAppBrowser` *(InAppBrowser)*
 
-*   **injectDetails**: detalles de la secuencia de comandos para ejecutar, o especificar un `file` o `code` clave. *(Objeto)*
+*   **injectDetails**: detalles de la secuencia de commandos para ejecutar, o especificar un `file` o `code` clave. *(Objeto)*
     
     *   **file**: URL de la hoja de estilos para inyectar.
     *   **code**: texto de la hoja de estilos para inyectar.

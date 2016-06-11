@@ -48,7 +48,7 @@ Affiche une boîte de dialogue ou d'alerte personnalisé. La plupart des implém
 
 *   **buttonName**: nom du bouton. *(String)* (Facultatif, par défaut`OK`)
 
-### Exemple
+### Example
 
     function alertDismissed() {
         // do something
@@ -107,7 +107,7 @@ Le `confirmCallback` s'exécute lorsque l'utilisateur appuie sur un bouton dans 
 
 Le rappel prend l'argument `buttonIndex` *(nombre)*, qui est l'index du bouton activé. Notez que l'index utilise base d'indexation, la valeur est `1` , `2` , `3` , etc..
 
-### Exemple
+### Example
 
     function onConfirm(buttonIndex) {
         alert('You selected button ' + buttonIndex);
@@ -170,7 +170,7 @@ Le `promptCallback` s'exécute lorsque l'utilisateur appuie sur un bouton dans l
 
 *   **entrée 1**: le texte entré dans la boîte de dialogue d'invite. *(String)*
 
-### Exemple
+### Example
 
     function onPrompt(results) {
         alert("You selected button number " + results.buttonIndex + " and entered " + results.input1);
@@ -212,7 +212,7 @@ Le dispositif joue un bip sonore.
 
 *   **temps**: le nombre de fois répéter le bip. *(Nombre)*
 
-### Exemple
+### Example
 
     // Beep twice!
     navigator.notification.beep(2);

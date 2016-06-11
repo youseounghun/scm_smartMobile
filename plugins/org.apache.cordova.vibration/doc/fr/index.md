@@ -54,7 +54,7 @@ ou
 
 -**temps**: millisecondes à vibrer l'appareil. *(Nombre)*
 
-#### Exemple
+#### Example
 
     // Vibrate for 3 seconds
     navigator.vibrate(3000);
@@ -84,7 +84,7 @@ Vibre l'appareil avec un motif donné
 
 *   **modèle**: séquence de la durée (en millisecondes) pour lequel activer ou désactiver le vibreur. *(Tableau de nombres)*
 
-#### Exemple
+#### Example
 
     // Vibrate for 1 second
     // Wait for 1 second
@@ -122,7 +122,7 @@ Vibre l'appareil pendant un certain temps.
 
 *   **temps**: millisecondes à vibrer l'appareil. *(Nombre)*
 
-### Exemple
+### Example
 
     // Vibrate for 2.5 seconds
     navigator.notification.vibrate(2500);
@@ -146,7 +146,7 @@ Vibre l'appareil avec un modèle donné.
 *   **modèle**: séquence de la durée (en millisecondes) pour lequel activer ou désactiver le vibreur. *(Tableau de nombres)*
 *   **répéter**: optionnel index dans le tableau de configuration à laquelle commencer à répéter (répétera jusqu'à annulation), ou -1 pour aucune répétition (par défaut). *(Nombre)*
 
-### Exemple
+### Example
 
     // Immediately start vibrating
     // vibrate for 100ms,

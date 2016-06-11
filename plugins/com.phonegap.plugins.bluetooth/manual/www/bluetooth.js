@@ -27,7 +27,7 @@ cordova.define("cordova/plugin/bluetooth", function(require, exports, module)
 
 	/**
 	 * Generic success callback for the Bluetooth API. Indicates only that the
-	 * action was executed succesfully.
+	 * action was executed successfully.
 	 *
 	 * @callback Bluetooth~onSuccess
 	 */
@@ -127,7 +127,7 @@ cordova.define("cordova/plugin/bluetooth", function(require, exports, module)
 	 * @memberOf Bluetooth
 	 * 
 	 * @param  {Bluetooth~onDeviceDiscovered} 	onDeviceDiscovered 		Invoked when a device is found.
-	 * @param  {Bluetooth~onSuccess} 			onDiscoveryFinished 	Invoked when discovery finishes succesfully.
+	 * @param  {Bluetooth~onSuccess} 			onDiscoveryFinished 	Invoked when discovery finishes successfully.
 	 * @param  {Bluetooth~onError} 				onError 				Invoked if there is an error, or the discovery finishes prematurely.
 	 */
 	Bluetooth.prototype.startDiscovery = function(onDeviceDiscovered, onDiscoveryFinished, onError) 
@@ -224,7 +224,7 @@ cordova.define("cordova/plugin/bluetooth", function(require, exports, module)
 	}
 
 	/**
-	 * Invoked when paired devices are succesfully retrieved.
+	 * Invoked when paired devices are successfully retrieved.
 	 *
 	 * @callback Bluetooth~onDevicesRetrieved
 	 *

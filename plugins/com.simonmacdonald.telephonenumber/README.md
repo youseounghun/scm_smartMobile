@@ -1,6 +1,6 @@
 # TelephoneNumber plugin for Phonegap #
 
-The telephone number plugin allows you to retreive the devices phone numberfrom your PhoneGap application.
+The telephone number plugin allows you to retrieve the devices phone numberfrom your PhoneGap application.
 
 ## Adding the Plugin to your project ##
 

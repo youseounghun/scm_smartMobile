@@ -95,7 +95,7 @@ Ouvre une URL dans une nouvelle `InAppBrowser` instance, l'instance de navigateu
 *   Windows 8 et 8.1
 *   Windows Phone 7 et 8
 
-### Exemple
+### Example
 
     var ref = window.open('http://apache.org', '_blank', 'location=yes');
     var ref2 = window.open(encodeURI('http://ja.m.wikipedia.org/wiki/ハングル'), '_blank', 'location=yes');
@@ -180,7 +180,7 @@ L'objet retourné par un appel à`window.open`.
 *   Windows 8 et 8.1
 *   Windows Phone 7 et 8
 
-### Petit exemple
+### Petit example
 
     var ref = window.open('http://apache.org', '_blank', 'location=yes');
     ref.addEventListener('loadstart', function(event) { alert(event.url); });
@@ -212,7 +212,7 @@ L'objet retourné par un appel à`window.open`.
 *   Windows 8 et 8.1
 *   Windows Phone 7 et 8
 
-### Petit exemple
+### Petit example
 
     var ref = window.open('http://apache.org', '_blank', 'location=yes');
     var myCallback = function(event) { alert(event.url); }
@@ -238,7 +238,7 @@ L'objet retourné par un appel à`window.open`.
 *   Windows 8 et 8.1
 *   Windows Phone 7 et 8
 
-### Petit exemple
+### Petit example
 
     var ref = window.open('http://apache.org', '_blank', 'location=yes');
     ref.close();
@@ -260,7 +260,7 @@ L'objet retourné par un appel à`window.open`.
 *   iOS
 *   Windows 8 et 8.1
 
-### Petit exemple
+### Petit example
 
     var ref = window.open('http://apache.org', '_blank', 'hidden=yes');
     // some time later...
@@ -292,7 +292,7 @@ L'objet retourné par un appel à`window.open`.
 *   iOS
 *   Windows 8 et 8.1
 
-### Petit exemple
+### Petit example
 
     var ref = window.open('http://apache.org', '_blank', 'location=yes');
     ref.addEventListener('loadstop', function() {
@@ -322,7 +322,7 @@ L'objet retourné par un appel à`window.open`.
 *   Android
 *   iOS
 
-### Petit exemple
+### Petit example
 
     var ref = window.open('http://apache.org', '_blank', 'location=yes');
     ref.addEventListener('loadstop', function() {

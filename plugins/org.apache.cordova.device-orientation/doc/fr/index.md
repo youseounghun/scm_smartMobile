@@ -51,7 +51,7 @@ Téléchargez la cours de la boussole. La boussole est renvoyé via un `CompassH
     navigator.compass.getCurrentHeading (compassSuccess, compassError) ;
     
 
-### Exemple
+### Example
 
     function onSuccess(heading) {
         alert('Heading: ' + heading.magneticHeading);
@@ -78,7 +78,7 @@ Le code retourné montre fait référence à l'intervalle montre boussole. La mo
 *   **fréquence** : la fréquence de récupération de la boussole en millisecondes. *(Nombre)* (Par défaut : 100)
 *   **filtre**: le changement en degrés nécessaires pour lancer un rappel de succès watchHeading. Lorsque cette valeur est définie, la **fréquence** est ignoré. *(Nombre)*
 
-### Exemple
+### Example
 
     function onSuccess(heading) {
         var element = document.getElementById('heading');
@@ -133,7 +133,7 @@ Arrêter de regarder la boussole référencée par le paramètre ID de montre.
 
 *   **watchID**: l'ID retourné par`navigator.compass.watchHeading`.
 
-### Exemple
+### Example
 
     var watchID = navigator.compass.watchHeading(onSuccess, onError, options);
     

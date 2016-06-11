@@ -148,13 +148,13 @@ A `CompassHeading` objeto es devuelto a la `compassSuccess` función de callback
 
 ### Propiedades
 
-*   **magneticHeading**: el rumbo en grados de 0-359.99 en un solo momento. *(Número)*
+*   **magneticHeading**: el rumbo en grados de 0-359.99 en un solo memento. *(Número)*
 
-*   **trueHeading**: el título en relación con el polo norte geográfico en grados 0-359.99 en un solo momento. Un valor negativo indica que no se puede determinar el rumbo verdadero. *(Número)*
+*   **trueHeading**: el título en relación con el polo norte geográfico en grados 0-359.99 en un solo memento. Un valor negativo indica que no se puede determinar el rumbo verdadero. *(Número)*
 
 *   **headingAccuracy**: la desviación en grados entre el rumbo divulgado y el rumbo verdadero. *(Número)*
 
-*   **timestamp**: el momento en el cual se determinó esta partida. *(milisegundos)*
+*   **timestamp**: el memento en el cual se determinó esta partida. *(milisegundos)*
 
 ### Amazon fuego OS rarezas
 

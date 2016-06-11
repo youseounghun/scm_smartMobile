@@ -75,7 +75,7 @@ Mostra una finestra di avviso o la finestra di dialogo personalizzata. La maggio
 
 ### Windows Phone 7 e 8 stranezze
 
-*   Non non c'è nessun avviso del browser integrato, ma è possibile associare uno come segue per chiamare `alert()` in ambito globale:
+*   Non non c'è nessun avviso del browser integrato, ma è possible associare uno come segue per chiamare `alert()` in ambito globale:
     
         window.alert = navigator.notification.alert;
         
@@ -134,7 +134,7 @@ Il callback accetta l'argomento `buttonIndex` *(numero)*, che è l'indice del pu
 
 ### Windows Phone 7 e 8 stranezze
 
-*   Non non c'è nessuna funzione browser incorporato per `window.confirm` , ma è possibile associare assegnando:
+*   Non non c'è nessuna funzione browser incorporato per `window.confirm` , ma è possible associare assegnando:
     
         window.confirm = navigator.notification.confirm;
         

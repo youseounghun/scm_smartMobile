@@ -130,7 +130,7 @@
 * CB-7357 Adds missing 'capability' element to phone's appxmanifest.
 
 ### 0.2.15 (Dec 02, 2014)
-* CB-7131 Check for profile photo existance
+* CB-7131 Check for profile photo existence
 * CB-7896 Better way to detect **Windows** and **WindowsPhone8.1**
 * CB-7896 Pending tests for `Save` and `Find` methods for **Windows** cause they are not supported yet
 * CB-7977 Mention `deviceready` in plugin docs

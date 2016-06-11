@@ -276,7 +276,7 @@ Les versions précédentes de ce plugin n'accepterait périphérique--fichier-ch
     /storage/emulated/0/path/to/file                                    (Android)
     
 
-Pour vers l'arrière la compatibilité, ces chemins sont toujours acceptés, et si votre application a enregistré des chemins comme celles-ci dans un stockage persistant, alors ils peuvent continuer à être utilisé.
+Pour vers l'arrière la compatibilité, ces chemins sont toujours acceptés, et si votre application a enregistré des chemins comme celles-ci dans un stockage persistent, alors ils peuvent continuer à être utilisé.
 
 Ces chemins ont été précédemment exposés dans le `fullPath` propriété de `FileEntry` et `DirectoryEntry` les objets retournés par le fichier plugin. Nouvelles versions du fichier plugin, cependant, ne plus exposent ces chemins à JavaScript.
 

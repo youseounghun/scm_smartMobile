@@ -30,7 +30,7 @@ Proporciona acceso a la base de datos de contactos de dispositivo.
 
 ### Firefox OS rarezas
 
-Crear **www/manifest.webapp** como se describe en [Manifestar Docs][1]. Agregar permisos pertinentes. También hay una necesidad de cambiar el tipo de aplicación a "privilegiados" - [Docs manifiestan][2]. **ADVERTENCIA**: todas las apps privilegiadas aplicar [Política de seguridad de contenidos][3] que prohíbe en línea de comandos. Inicializar la aplicación de otra manera.
+Crear **www/manifest.webapp** como se describe en [Manifestar Docs][1]. Agregar permisos pertinentes. También hay una necesidad de cambiar el tipo de aplicación a "privilegiados" - [Docs manifiestan][2]. **ADVERTENCIA**: todas las apps privilegiadas aplicar [Política de seguridad de contenidos][3] que prohíbe en línea de commandos. Inicializar la aplicación de otra manera.
 
  [1]: https://developer.mozilla.org/en-US/Apps/Developing/Manifest
  [2]: https://developer.mozilla.org/en-US/Apps/Developing/Manifest#type
