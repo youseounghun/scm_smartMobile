@@ -171,7 +171,7 @@ Las aplicaciones normalmente deben utilizar `document.addEventListener` para con
 
 ### iOS rarezas
 
-Durante el arranque inicial, el primer evento `en línea` (si procede) al menos toma un segundo para disparar, antes de que `connection.type` es `desconocido`.
+Durante el arranque inicial, el primer evento `en línea` (si proceed) al menos toma un segundo para disparar, antes de que `connection.type` es `desconocido`.
 
 ### Windows Phone 7 rarezas
 

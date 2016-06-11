@@ -25,7 +25,7 @@ Cette API est basée sur la [Spécification de l'API Geolocation du W3C][1] et s
 
  [1]: http://dev.w3.org/geo/api/spec-source.html
 
-**Avertissement**: collecte et utilisation des données de géolocalisation soulève des questions importantes de la vie privée. La politique de confidentialité de votre application devrait traiter de la manière dont l'application utilise les données de géolocalisation, si elle les partage avec d'autres parties ou non et définir le niveau de précision de celles-ci (par exemple grossier, fin, restreint au code postal, etc.). Données de géolocalisation sont généralement considéré comme sensibles car elle peut révéler la localisation de l'utilisateur et, si stocké, l'histoire de leurs voyages. Par conséquent, en plus de la politique de confidentialité de l'application, vous devez envisager fortement fournissant un avis juste-à-temps, avant que l'application accède aux données de géolocalisation (si le système d'exploitation de périphérique n'est pas faire déjà). Cette notice devrait contenir les informations susmentionnées, ainsi que permettre de recueillir l'autorisation de l'utilisateur (par exemple, en offrant les possibilités **OK** et **Non merci**). Pour plus d'informations, veuillez vous référer à la section "Guide du respect de la vie privée".
+**Avertissement**: collecte et utilisation des données de géolocalisation soulève des questions importantes de la vie privée. La politique de confidentialité de votre application devrait traiter de la manière dont l'application utilise les données de géolocalisation, si elle les partage avec d'autres parties ou non et définir le niveau de précision de celles-ci (par example grossier, fin, restreint au code postal, etc.). Données de géolocalisation sont généralement considéré comme sensibles car elle peut révéler la localisation de l'utilisateur et, si stocké, l'histoire de leurs voyages. Par conséquent, en plus de la politique de confidentialité de l'application, vous devez envisager fortement fournissant un avis juste-à-temps, avant que l'application accède aux données de géolocalisation (si le système d'exploitation de périphérique n'est pas faire déjà). Cette notice devrait contenir les informations susmentionnées, ainsi que permettre de recueillir l'autorisation de l'utilisateur (par example, en offrant les possibilités **OK** et **Non merci**). Pour plus d'informations, veuillez vous référer à la section "Guide du respect de la vie privée".
 
 ## Installation
 
@@ -70,7 +70,7 @@ Retourne la position actuelle de l'appareil à la `geolocationSuccess` rappel av
 
 *   **geolocationOptions** : *(facultatives)* des préférences de géolocalisation.
 
-### Exemple
+### Example
 
     onSuccess rappel / / cette méthode accepte un objet de Position, qui contient le / / coordonnées GPS actuel / / var onSuccess = function(position) {alert ('Latitude: ' + position.coords.latitude + « \n » + ' Longitude: ' + position.coords.longitude + « \n » + ' Altitude: ' + position.coords.altitude + « \n » + ' précision: ' + position.coords.accuracy + « \n » + ' Altitude précision: ' + position.coords.altitudeAccuracy + « \n » + ' rubrique: ' + position.coords.heading + « \n » + ' vitesse: ' + position.coords.speed + « \n » + ' Timestamp: ' + position.timestamp + « \n »);} ;
     
@@ -98,7 +98,7 @@ Retourne la position actuelle de l'appareil lorsqu'un changement de position est
 
 *   **Chaîne**: retourne un id de montre qui fait référence à l'intervalle de position montre. L'id de la montre doit être utilisé avec `navigator.geolocation.clearWatch` d'arrêter de regarder pour les changements de position.
 
-### Exemple
+### Example
 
     onSuccess rappel / / cette méthode accepte un objet « Position », qui contient / / coordonnées de GPS le courant / / function onSuccess(position) {var element = document.getElementById('geolocation') ;
         element.innerHTML = ' Latitude: "+ position.coords.latitude + ' < br / >' + ' Longitude:" + position.coords.longitude + ' < br / >' + ' < hr / >' + element.innerHTML ;
@@ -138,7 +138,7 @@ Arrêter de regarder pour les modifications à l'emplacement de l'appareil réf�
 
 *   **watchID** : l'identifiant de l'intervalle `watchPosition` à effacer. (String)
 
-### Exemple
+### Example
 
     Options : suivi des modifications dans la position et utilise le plus / / exacte position méthode d'acquisition disponible.
     var watchID = navigator.geolocation.watchPosition (onSuccess, onError, {enableHighAccuracy : true}) ;

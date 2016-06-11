@@ -906,7 +906,7 @@ public class ContactAccessorSdk5 extends ContactAccessor {
             Uri photoUri = Uri.withAppendedPath(person, ContactsContract.Contacts.Photo.CONTENT_DIRECTORY);
             photo.put("value", photoUri.toString());
 
-            // Query photo existance
+            // Query photo existence
             Cursor photoCursor = mApp.getActivity().getContentResolver().query(photoUri, new String[] {ContactsContract.Contacts.Photo.PHOTO}, null, null, null);
             if (photoCursor == null) {
                 return null;

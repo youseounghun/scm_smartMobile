@@ -168,7 +168,7 @@ public class ContactManager extends CordovaPlugin {
                 Cursor c =  this.cordova.getActivity().getContentResolver().query(RawContacts.CONTENT_URI,
                             new String[] {RawContacts._ID}, RawContacts.CONTACT_ID + " = " + contactId, null, null);
                 if (!c.moveToFirst()) {
-                    this.callbackContext.error("Error occured while retrieving contact raw id");
+                    this.callbackContext.error("Error occurred while retrieving contact raw id");
                     return;
                 }
                 String id = c.getString(c.getColumnIndex(RawContacts._ID));

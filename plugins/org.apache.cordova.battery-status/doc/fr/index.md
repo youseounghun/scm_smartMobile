@@ -60,7 +60,7 @@ Les applications doivent généralement utiliser `window.addEventListener` pour 
 
 Windows Phone 7 ne fournit pas d'API native pour déterminer le niveau de la batterie, de ce fait la propriété `level` n'est pas disponible. La propriété `isPlugged` *est* quant à elle prise en charge.
 
-### Exemple
+### Example
 
     window.addEventListener("batterystatus", onBatteryStatus, false);
     
@@ -91,7 +91,7 @@ Les applications devraient en général utiliser `window.addEventListener` pour 
 *   Paciarelli
 *   Firefox OS
 
-### Exemple
+### Example
 
     window.addEventListener("batterycritical", onBatteryCritical, false);
     
@@ -122,7 +122,7 @@ Les applications devraient en général utiliser `window.addEventListener` pour 
 *   Paciarelli
 *   Firefox OS
 
-### Exemple
+### Example
 
     window.addEventListener("batterylow", onBatteryLow, false);
     

@@ -90,7 +90,7 @@ public class InAppChromeClient extends AmazonWebChromeClient {
      * handle the prompt dialog and call the appropriate JsPromptResult method.
      *
      * The prompt bridge provided for the InAppBrowser is capable of executing any
-     * oustanding callback belonging to the InAppBrowser plugin. Care has been
+     * outstanding callback belonging to the InAppBrowser plugin. Care has been
      * taken that other callbacks cannot be triggered, and that no other code
      * execution is possible.
      *

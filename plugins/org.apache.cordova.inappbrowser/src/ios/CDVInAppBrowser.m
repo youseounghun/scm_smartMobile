@@ -340,7 +340,7 @@
 }
 
 /**
- * The iframe bridge provided for the InAppBrowser is capable of executing any oustanding callback belonging
+ * The iframe bridge provided for the InAppBrowser is capable of executing any outstanding callback belonging
  * to the InAppBrowser plugin. Care has been taken that other callbacks cannot be triggered, and that no
  * other code execution is possible.
  *

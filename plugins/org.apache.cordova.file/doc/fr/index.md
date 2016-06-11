@@ -140,7 +140,7 @@ Bien que techniquement un détail d'implémentation, il peut être très utile d
 
 ## Quirks Android
 
-### Emplacement de stockage persistant Android
+### Emplacement de stockage persistent Android
 
 Il y a plusieurs emplacements valides pour stocker des fichiers persistants sur un appareil Android. Voir [cette page][3] pour une analyse approfondie des diverses possibilités.
 
@@ -159,9 +159,9 @@ Il est maintenant possible de choisir de stocker les fichiers dans l'emplacement
 
 Sans cette ligne, utilisera le fichier plugin `Compatibility` par défaut. Si une balise de préférence est présente et n'est pas une des valeurs suivantes, l'application ne démarrera pas.
 
-Si votre application a déjà été expédiée aux utilisateurs, en utilisant une ancienne (avant 1.0) version de ce plugin et dispose des fichiers stockés dans le système de fichiers persistant, alors vous devez définir la préférence au `Compatibility` . Commutation de l'emplacement « Internal » signifierait que les utilisateurs existants qui mettre à niveau leur application peuvent être impossible d'accéder à leurs fichiers déjà enregistrés, selon leur appareil.
+Si votre application a déjà été expédiée aux utilisateurs, en utilisant une ancienne (avant 1.0) version de ce plugin et dispose des fichiers stockés dans le système de fichiers persistent, alors vous devez définir la préférence au `Compatibility` . Commutation de l'emplacement « Internal » signifierait que les utilisateurs existants qui mettre à niveau leur application peuvent être impossible d'accéder à leurs fichiers déjà enregistrés, selon leur appareil.
 
-Si votre application est nouvelle ou a jamais précédemment stocké les fichiers dans le système de fichiers persistant, puis la `Internal` réglage est généralement recommandé.
+Si votre application est nouvelle ou a jamais précédemment stocké les fichiers dans le système de fichiers persistent, puis la `Internal` réglage est généralement recommandé.
 
 ## iOS Quirks
 
@@ -169,7 +169,7 @@ Si votre application est nouvelle ou a jamais précédemment stocké les fichier
 *   `FileReader.readAsText(blob, encoding)` 
     *   Le `encoding` paramètre n'est pas pris en charge, et le codage UTF-8 est toujours en vigueur.
 
-### emplacement de stockage persistant d'iOS
+### emplacement de stockage persistent d'iOS
 
 Il y a deux emplacements valides pour stocker des fichiers persistants sur un appareil iOS : le répertoire de Documents et le répertoire de la bibliothèque. Les versions précédentes du plugin stockaient ne jamais fichiers persistants dans le répertoire de Documents. Cela a eu l'effet secondaire de rendre tous les fichiers de l'application visible dans iTunes, qui était souvent inattendus, en particulier pour les applications qui traitent beaucoup de petits fichiers, plutôt que de produire des documents complets destinés à l'exportation, qui est l'objectif visé par le répertoire.
 
@@ -182,9 +182,9 @@ Il est maintenant possible de choisir de stocker les fichiers dans le répertoir
 
 Sans cette ligne, utilisera le fichier plugin `Compatibility` par défaut. Si une balise de préférence est présente et n'est pas une des valeurs suivantes, l'application ne démarrera pas.
 
-Si votre application a déjà été expédiée aux utilisateurs, en utilisant une ancienne (avant 1.0) version de ce plugin et dispose des fichiers stockés dans le système de fichiers persistant, alors vous devez définir la préférence au `Compatibility` . Changer l'emplacement de `Library` voudrait dire que les utilisateurs existants qui mettre à niveau leur application serait incapables d'accéder à leurs fichiers déjà enregistrés.
+Si votre application a déjà été expédiée aux utilisateurs, en utilisant une ancienne (avant 1.0) version de ce plugin et dispose des fichiers stockés dans le système de fichiers persistent, alors vous devez définir la préférence au `Compatibility` . Changer l'emplacement de `Library` voudrait dire que les utilisateurs existants qui mettre à niveau leur application serait incapables d'accéder à leurs fichiers déjà enregistrés.
 
-Si votre application est nouvelle ou a jamais précédemment stocké les fichiers dans le système de fichiers persistant, puis la `Library` réglage est généralement recommandé.
+Si votre application est nouvelle ou a jamais précédemment stocké les fichiers dans le système de fichiers persistent, puis la `Library` réglage est généralement recommandé.
 
 ## Firefox OS Quirks
 

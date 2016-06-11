@@ -34,7 +34,7 @@ Bluetooth.prototype.isSupported = function()
 
 /**
  * Generic success callback for the Bluetooth API. Indicates only that the
- * action was executed succesfully.
+ * action was executed successfully.
  *
  * @callback Bluetooth~onSuccess
  */
@@ -134,7 +134,7 @@ Bluetooth.prototype.isDiscovering = function(onSuccess, onError)
  * @memberOf Bluetooth
  *
  * @param  {Bluetooth~onDeviceDiscovered}   onDeviceDiscovered      Invoked when a device is found.
- * @param  {Bluetooth~onSuccess}            onDiscoveryFinished     Invoked when discovery finishes succesfully.
+ * @param  {Bluetooth~onSuccess}            onDiscoveryFinished     Invoked when discovery finishes successfully.
  * @param  {Bluetooth~onError}              onError                 Invoked if there is an error, or the discovery finishes prematurely.
  * @param  {object}                         opts                    Optional options
  * @param  {number}                         opts.timeout            How many millis until the timeout error is invoked
@@ -242,7 +242,7 @@ Bluetooth.prototype.unpair = function(onSuccess, onError, address)
 }
 
 /**
- * Invoked when paired devices are succesfully retrieved.
+ * Invoked when paired devices are successfully retrieved.
  *
  * @callback Bluetooth~onDevicesRetrieved
  *

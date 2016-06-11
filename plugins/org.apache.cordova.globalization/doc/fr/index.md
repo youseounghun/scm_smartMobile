@@ -67,7 +67,7 @@ S'il y a une erreur d'obtention de la langue, puis le `errorCallback` s'exécute
 *   iOS
 *   Windows Phone 8
 
-### Exemple
+### Example
 
 Lorsque le navigateur est configuré pour le `en-US` langue, cela devrait afficher une boîte de dialogue contextuelle avec le texte `language: en-US` :
 
@@ -108,7 +108,7 @@ S'il y a une erreur d'obtenir les paramètres régionaux, puis le `errorCallback
 *   iOS
 *   Windows Phone 8
 
-### Exemple
+### Example
 
 Lorsque le navigateur est configuré pour la `en-US` locale, ceci pour afficher une fenêtre popup avec le texte`locale: en-US`.
 
@@ -159,7 +159,7 @@ Le `options.selector` peut être `date` , `time` ou`date and time`.
 *   iOS
 *   Windows Phone 8
 
-### Exemple
+### Example
 
 Si le navigateur est configuré pour la `en_US` locale, cela permet d'afficher une boîte de dialogue contextuelle avec un texte semblable à `date: 9/25/2012 4:21PM` en utilisant les options par défaut :
 
@@ -205,7 +205,7 @@ Retourne le modèle de la `successCallback` avec un `properties` objet comme par
 
  [1]: http://unicode.org/reports/tr35/tr35-4.html
 
-L'entrantes `currencyCode` paramètre doit être un `String` de l'un des codes de devise ISO 4217, par exemple « USD ».
+L'entrantes `currencyCode` paramètre doit être un `String` de l'un des codes de devise ISO 4217, par example « USD ».
 
 S'il y a une erreur, obtenir le modèle, puis le `errorCallback` s'exécute avec un `GlobalizationError` objet comme paramètre. Code attendu de l'erreur est`GlobalizationError.FORMATTING_ERROR`.
 
@@ -216,9 +216,9 @@ S'il y a une erreur, obtenir le modèle, puis le `errorCallback` s'exécute avec
 *   BlackBerry 10
 *   iOS
 
-### Exemple
+### Example
 
-Lorsque le navigateur est configuré pour la `en_US` locale et la devise sélectionnée est Dollars des États-Unis, cet exemple pour afficher une fenêtre popup avec un texte semblable aux résultats qui suivent :
+Lorsque le navigateur est configuré pour la `en_US` locale et la devise sélectionnée est Dollars des États-Unis, cet example pour afficher une fenêtre popup avec un texte semblable aux résultats qui suivent :
 
     navigator.globalization.getCurrencyPattern(
         'USD',
@@ -275,9 +275,9 @@ La valeur de `options.item` peut être `months` ou`days`.
 *   iOS
 *   Windows Phone 8
 
-### Exemple
+### Example
 
-Lorsque le navigateur est configuré pour la `en_US` locale, cet exemple affiche une série de douze fenêtres popup, un par mois, avec un texte semblable à `month: January` :
+Lorsque le navigateur est configuré pour la `en_US` locale, cet example affiche une série de douze fenêtres popup, un par mois, avec un texte semblable à `month: January` :
 
     navigator.globalization.getDateNames(
         function (names) {
@@ -331,9 +331,9 @@ time`.
 *   iOS
 *   Windows Phone 8
 
-### Exemple
+### Example
 
-Lorsque le navigateur est configuré pour la `en_US` locale, cet exemple pour afficher une fenêtre popup avec texte comme `pattern: M/d/yyyy h:mm a` :
+Lorsque le navigateur est configuré pour la `en_US` locale, cet example pour afficher une fenêtre popup avec texte comme `pattern: M/d/yyyy h:mm a` :
 
     function checkDatePattern() {
         navigator.globalization.getDatePattern(
@@ -376,7 +376,7 @@ S'il y a une erreur, obtenir le modèle, puis le `errorCallback` s'exécute avec
 *   iOS
 *   Windows Phone 8
 
-### Exemple
+### Example
 
 Lorsque le navigateur est configuré pour la `en_US` locale, cela permet d'afficher une boîte de dialogue contextuelle avec un texte semblable à`day: 1`.
 
@@ -430,7 +430,7 @@ Le `options.type` peut être `decimal` , `percent` , ou`currency`.
 *   iOS
 *   Windows Phone 8
 
-### Exemple
+### Example
 
 Lorsque le navigateur est configuré pour la `en_US` locale, cela doit afficher une boîte de dialogue contextuelle avec un texte semblable aux résultats qui suivent :
 
@@ -490,7 +490,7 @@ S'il y a une erreur de lecture de la date, puis le `errorCallback` s'exécute. C
 *   iOS
 *   Windows Phone 8
 
-### Exemple
+### Example
 
 Pendant l'été et si l'heure d'été est activée sur le fuseau horaire actuel du navigateur, une fenêtre popup contenant `dst : true` est affichée :
 
@@ -529,7 +529,7 @@ Le `options.type` peut être « decimal », « % » ou « monnaie ».
 *   iOS
 *   Windows Phone 8
 
-### Exemple
+### Example
 
 Lorsque le navigateur est configuré pour la `en_US` locale, cela permet d'afficher une boîte de dialogue contextuelle avec un texte semblable à `number: 3.142` :
 
@@ -587,7 +587,7 @@ Si une erreur survient lors de l'analyse de la chaîne de caractères, la foncti
 *   iOS
 *   Windows Phone 8
 
-### Exemple
+### Example
 
 Lorsque le navigateur est configuré pour la `en_US` locale, cela permet d'afficher une boîte de dialogue contextuelle avec un texte semblable à `month:8 day:25 year:2012` . Notez que l'entier faisant référence au numéro du mois est différent de celui présent dans la chaîne parsée, ceci car il représente un index de tableau.
 
@@ -633,7 +633,7 @@ Le `options.type` peut être `decimal` , `percent` , ou`currency`.
 *   iOS
 *   Windows Phone 8
 
-### Exemple
+### Example
 
 Lorsque le navigateur est configuré pour la `en_US` locale, cela doit afficher une boîte de dialogue contextuelle avec un texte semblable à `number: 1234.56` :
 
@@ -670,9 +670,9 @@ Cet objet est créé et remplie par Cordova, puis transmis à une fonction callb
 *   Firefox OS
 *   iOS
 
-### Exemple
+### Example
 
-Lorsque la fonction callback d'erreur suivante est exécutée, une fenêtre popup contenant par exemple `code : 3` et `message :` est affichée.
+Lorsque la fonction callback d'erreur suivante est exécutée, une fenêtre popup contenant par example `code : 3` et `message :` est affichée.
 
     function errorCallback(error) {
         alert('code : ' + error.code + '\n' +

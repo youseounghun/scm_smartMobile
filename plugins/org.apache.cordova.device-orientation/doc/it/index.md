@@ -150,7 +150,7 @@ A `CompassHeading` oggetto viene restituito alla `compassSuccess` funzione di ca
 
 *   **magneticHeading**: la rotta in gradi da 0-359.99 in un unico momento. *(Numero)*
 
-*   **trueHeading**: la voce rispetto al Polo Nord geografico in gradi 0-359.99 in un unico momento. Un valore negativo indica che non è possibile determinare la vera voce. *(Numero)*
+*   **trueHeading**: la voce rispetto al Polo Nord geografico in gradi 0-359.99 in un unico momento. Un valore negativo indica che non è possible determinare la vera voce. *(Numero)*
 
 *   **headingAccuracy**: lo scostamento in gradi tra il titolo segnalato e la vera voce. *(Numero)*
 

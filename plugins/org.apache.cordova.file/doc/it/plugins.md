@@ -45,7 +45,7 @@ Su Android, il metodo più semplice per convertire un `cdvfile://` URL a un perc
     Uri fileURL = resourceApi.remapUri(Uri.parse(cdvfileURL));
     
 
-È anche possibile utilizzare direttamente il File del plugin:
+È anche possible utilizzare direttamente il File del plugin:
 
     import org.apache.cordova.file.FileUtils;
     import org.apache.cordova.file.FileSystem;

@@ -79,7 +79,7 @@ Los valores para X, Y, movimiento Z son todo generada aleatoriamente en orden pa
 
 ### iOS rarezas
 
-*   iOS no reconoce el concepto de conseguir la aceleración actual en cualquier momento dado.
+*   iOS no reconoce el concepto de conseguir la aceleración actual en cualquier memento dado.
 
 *   Debes ver la aceleración y capturar los datos en determinados intervalos de tiempo.
 
@@ -148,4 +148,4 @@ Contiene data del `Accelerometer` capturada en un punto específico en el tiempo
 *   **x**: Cantidad de aceleración en el eje X. (en m/s^2) *(Number)*
 *   **y**: Cantidad de aceleración en el eje Y. (en m/s^2) *(Number)*
 *   **z**: Cantidad de aceleración en el eje Z. (en m/s^2) *(Number)*
-*   **timestamp**: Momento de la captura en milisegundos.*(DOMTimeStamp)*
+*   **timestamp**: Memento de la captura en milisegundos.*(DOMTimeStamp)*

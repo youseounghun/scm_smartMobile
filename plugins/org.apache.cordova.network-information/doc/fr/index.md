@@ -135,7 +135,7 @@ Les applications doivent généralement utiliser `document.addEventListener` pou
 
 ### iOS Quirks
 
-Lors du démarrage initial, le déclenchement du premier évènement offline (si applicable) prend au moins une seconde.
+Lors du démarriage initial, le déclenchement du premier évènement offline (si applicable) prend au moins une seconde.
 
 ### Windows Phone 7 Quirks
 
@@ -169,7 +169,7 @@ Les applications doivent généralement utiliser `document.addEventListener` pou
 
 ### iOS Quirks
 
-Lors du démarrage initial, le déclenchement du premier évènement `online` (si applicable) prend au moins une seconde avant quoi `connection.type` vaut `UNKNOWN`.
+Lors du démarriage initial, le déclenchement du premier évènement `online` (si applicable) prend au moins une seconde avant quoi `connection.type` vaut `UNKNOWN`.
 
 ### Windows Phone 7 Quirks
 

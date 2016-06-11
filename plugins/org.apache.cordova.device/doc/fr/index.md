@@ -182,7 +182,7 @@ Le `uuid` sur iOS n'est pas propre à un périphérique, mais varie pour chaque 
 
 ### Windows Phone 7 et 8 Quirks
 
-Le `uuid` pour Windows Phone 7 requiert l'autorisation `ID_CAP_IDENTITY_DEVICE` . Microsoft va probablement bientôt obsolète de cette propriété. Si la capacité n'est pas disponible, l'application génère un guid persistant qui est maintenu pendant toute la durée de l'installation de l'application sur le périphérique.
+Le `uuid` pour Windows Phone 7 requiert l'autorisation `ID_CAP_IDENTITY_DEVICE` . Microsoft va probablement bientôt obsolète de cette propriété. Si la capacité n'est pas disponible, l'application génère un guid persistent qui est maintenu pendant toute la durée de l'installation de l'application sur le périphérique.
 
 ## device.version
 

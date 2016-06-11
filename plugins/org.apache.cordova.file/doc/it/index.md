@@ -62,7 +62,7 @@ A partire dalla v 1.2.0, vengono forniti gli URL per le directory importanti fil
 
 *   `cordova.file.dataDirectory`-Archiviazione dati persistente e privati nella sandbox dell'applicazione utilizzando la memoria interna (su Android, se è necessario utilizzare la memoria esterna, utilizzare `.externalDataDirectory` ). IOS, questa directory non è sincronizzata con iCloud (utilizzare `.syncedDataDirectory` ). (*iOS*, *Android*, *BlackBerry 10*)
 
-*   `cordova.file.cacheDirectory`-Directory per i file memorizzati nella cache di dati o qualsiasi file che app possibile ricreare facilmente. L'OS può eliminare questi file quando il dispositivo viene eseguito basso sull'archiviazione, tuttavia, apps non deve basarsi sul sistema operativo per cancellare i file qui. (*iOS*, *Android*, *BlackBerry 10*)
+*   `cordova.file.cacheDirectory`-Directory per i file memorizzati nella cache di dati o qualsiasi file che app possible ricreare facilmente. L'OS può eliminare questi file quando il dispositivo viene eseguito basso sull'archiviazione, tuttavia, apps non deve basarsi sul sistema operativo per cancellare i file qui. (*iOS*, *Android*, *BlackBerry 10*)
 
 *   `cordova.file.externalApplicationStorageDirectory`-Spazio applicazione su storage esterno. (*Android*)
 
@@ -72,7 +72,7 @@ A partire dalla v 1.2.0, vengono forniti gli URL per le directory importanti fil
 
 *   `cordova.file.externalRootDirectory`-Radice di archiviazione esterna (scheda SD). (*Android*, *BlackBerry, 10*)
 
-*   `cordova.file.tempDirectory`-Temp directory che l'OS è possibile cancellare a volontà. Non fare affidamento sul sistema operativo per cancellare questa directory; l'app deve sempre rimuovere file come applicabile. (*iOS*)
+*   `cordova.file.tempDirectory`-Temp directory che l'OS è possible cancellare a volontà. Non fare affidamento sul sistema operativo per cancellare questa directory; l'app deve sempre rimuovere file come applicabile. (*iOS*)
 
 *   `cordova.file.syncedDataDirectory`-Contiene i file app specifiche che devono essere sincronizzati (per esempio a iCloud). (*iOS*)
 
@@ -150,7 +150,7 @@ Versioni precedenti del plugin avrebbe scelto il percorso dei file temporanei e 
 
 Se la scheda SD non era disponibile, poi versioni precedenti vuoi memorizzare dati sotto `/data/data/<packageId>` , che isola i apps da altro, ma può ancora causa dati da condividere tra gli utenti.
 
-Ora è possibile scegliere se memorizzare i file nel percorso di archiviazione di file interno o utilizzando la logica precedente, con una preferenza nell'applicazione `config.xml` file. A tale scopo, aggiungere una di queste due linee di `config.xml` :
+Ora è possible scegliere se memorizzare i file nel percorso di archiviazione di file interno o utilizzando la logica precedente, con una preferenza nell'applicazione `config.xml` file. A tale scopo, aggiungere una di queste due linee di `config.xml` :
 
     <preference name="AndroidPersistentFileLocation" value="Internal" />
     
@@ -173,7 +173,7 @@ Se l'applicazione è nuova, o ha mai precedentemente memorizzati i file nel file
 
 Ci sono due percorsi validi per memorizzare i file persistenti su un dispositivo iOS: la directory documenti e la biblioteca. Precedenti versioni del plugin archiviati solo mai persistenti file nella directory documenti. Questo ha avuto l'effetto collaterale di tutti i file di un'applicazione che rende visibili in iTunes, che era spesso involontaria, soprattutto per le applicazioni che gestiscono un sacco di piccoli file, piuttosto che produrre documenti completi per l'esportazione, che è la destinazione della directory.
 
-Ora è possibile scegliere se memorizzare i file nella directory di libreria, con una preferenza nella vostra applicazione o documenti `config.xml` file. A tale scopo, aggiungere una di queste due linee di `config.xml` :
+Ora è possible scegliere se memorizzare i file nella directory di libreria, con una preferenza nella vostra applicazione o documenti `config.xml` file. A tale scopo, aggiungere una di queste due linee di `config.xml` :
 
     <preference name="iosPersistentFileLocation" value="Library" />
     
@@ -219,7 +219,7 @@ Per indietro compatibilità, il `resolveLocalFileSystemURL()` Metodo accetterà 
 
 Questo particolare è stato un problema con il plugin di trasferimento File, che in precedenza utilizzati percorsi-dispositivo-assoluto (e ancora può accoglierli). Esso è stato aggiornato per funzionare correttamente con gli URL di FileSystem, così sostituendo `entry.fullPath` con `entry.toURL()` dovrebbe risolvere eventuali problemi ottenendo quel plugin per lavorare con i file nel dispositivo.
 
-In v. 1.1.0 il valore restituito di `toURL()` è stato cambiato (vedere \[CB-6394\] (https://issues.apache.org/jira/browse/CB-6394)) per restituire un URL assoluto 'file://'. ove possibile. Per assicurare un ' cdvfile:'-URL, è possibile utilizzare `toInternalURL()` ora. Questo metodo restituirà ora filesystem URL del modulo
+In v. 1.1.0 il valore restituito di `toURL()` è stato cambiato (vedere \[CB-6394\] (https://issues.apache.org/jira/browse/CB-6394)) per restituire un URL assoluto 'file://'. ove possible. Per assicurare un ' cdvfile:'-URL, è possible utilizzare `toInternalURL()` ora. Questo metodo restituirà ora filesystem URL del modulo
 
     cdvfile://localhost/persistent/path/to/file
     
@@ -272,4 +272,4 @@ Android supporta anche un filesystem speciale denominato "documenti", che rappre
 *   `bundle`: Bundle dell'applicazione; la posizione dell'app sul disco (sola lettura)
 *   `root`: Dispositivo intero filesystem
 
-Per impostazione predefinita, la directory di libreria e documenti può essere sincronizzata a iCloud. È anche possibile richiedere due filesystem aggiuntivi, `library-nosync` e `documents-nosync` , che rappresentano una speciale directory non sincronizzati entro il `/Library` o `/Documents` filesystem.
+Per impostazione predefinita, la directory di libreria e documenti può essere sincronizzata a iCloud. È anche possible richiedere due filesystem aggiuntivi, `library-nosync` e `documents-nosync` , che rappresentano una speciale directory non sincronizzati entro il `/Library` o `/Documents` filesystem.

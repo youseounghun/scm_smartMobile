@@ -216,7 +216,7 @@ Le `Contact` objet représente le contact de l'utilisateur. Contacts peuvent êt
 
 *   **supprimer**: supprime le contact de la base de données de contacts de dispositif, sinon exécute un rappel d'erreur avec un `ContactError` objet.
 
-*   **Enregistrer**: enregistre un nouveau contact dans la base de données de contacts de périphérique, ou met à jour un contact existant, si un contact avec le même **id** existe déjà.
+*   **Enregistrer**: enregistre un nouveau contact dans la base de données de contacts de périphérique, ou met à jour un contact existent, si un contact avec le même **id** existe déjà.
 
 ### Plates-formes prises en charge
 

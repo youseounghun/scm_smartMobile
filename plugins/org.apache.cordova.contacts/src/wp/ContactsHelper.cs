@@ -41,7 +41,7 @@ namespace WPCordovaClassLib.Cordova.Commands
         {
             var contactFieldsWithJsonVals = contact.PopulateContactDictionary();
 
-            // if desiredFields are not defined, use all avilable fields
+            // if desiredFields are not defined, use all available fields
             if (desiredFields == null || desiredFields.Length == 0)
             {
                 desiredFields = contactFieldsWithJsonVals.Keys.ToArray();
